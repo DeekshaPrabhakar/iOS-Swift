@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		CBBE19C71D29B0EE0045BBBA /* CalculatorBrain.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBBE19C61D29B0EE0045BBBA /* CalculatorBrain.swift */; };
 		CBD7CDE91D290F02002988BB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBD7CDE81D290F02002988BB /* AppDelegate.swift */; };
 		CBD7CDEB1D290F02002988BB /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBD7CDEA1D290F02002988BB /* ViewController.swift */; };
 		CBD7CDEE1D290F02002988BB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CBD7CDEC1D290F02002988BB /* Main.storyboard */; };
@@ -15,6 +16,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		CBBE19C61D29B0EE0045BBBA /* CalculatorBrain.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CalculatorBrain.swift; sourceTree = "<group>"; };
 		CBD7CDE51D290F02002988BB /* Calculator.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Calculator.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CBD7CDE81D290F02002988BB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CBD7CDEA1D290F02002988BB /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -56,6 +58,7 @@
 			children = (
 				CBD7CE361D2911B6002988BB /* Supporting Files */,
 				CBD7CDEA1D290F02002988BB /* ViewController.swift */,
+				CBBE19C61D29B0EE0045BBBA /* CalculatorBrain.swift */,
 				CBD7CDEC1D290F02002988BB /* Main.storyboard */,
 			);
 			path = Calculator;
@@ -143,6 +146,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CBBE19C71D29B0EE0045BBBA /* CalculatorBrain.swift in Sources */,
 				CBD7CDEB1D290F02002988BB /* ViewController.swift in Sources */,
 				CBD7CDE91D290F02002988BB /* AppDelegate.swift in Sources */,
 			);
