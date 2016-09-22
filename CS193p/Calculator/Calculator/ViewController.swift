@@ -12,6 +12,8 @@ class ViewController: UIViewController {
     
     @IBOutlet private weak var display: UILabel!//initially set to nil, implicitly unwrapped optional
     
+    @IBOutlet private weak var displayDescription: UILabel!
+    
     private var userIsInMiddleOfTyping = false //variables should always be initialized
     
     //Computed Property
@@ -23,6 +25,9 @@ class ViewController: UIViewController {
             display.text = String(newValue)
         }
     }
+    
+    private var brain = CalculatorBrain()//infer
+    
     @IBAction private func touchDigit(sender: UIButton) {
         let digit = sender.currentTitle!
         
@@ -34,27 +39,21 @@ class ViewController: UIViewController {
             display.text = digit
         }
         userIsInMiddleOfTyping = true
+       
     }
     
-    private var brain = CalculatorBrain()//infer
     
     @IBAction private func performOperation(sender: UIButton) {
-        if(userIsInMiddleOfTyping) {
+        if userIsInMiddleOfTyping {
             brain.setOperand(displayValue)
             userIsInMiddleOfTyping = false
         }
         if let mathematicalSymbol = sender.currentTitle { //mathematicalSymbol only exists in the current scope
             brain.performOperation(mathematicalSymbol)
         }
-        displayValue = brain.result
         
-        /*if(mathematicalSymbol == "π") {
-         displayValue = M_PI //using computed prop instead of display.text = String(M_PI)
-         }
-         else if(mathematicalSymbol == "√") {
-         displayValue = sqrt(displayValue)
-         }
-         */
+        displayValue = brain.result
+        displayDescription.text = brain.description
     }
 }
 
